@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function getIndex(){
+ var x=document.getElementById("housetype")
+if(x.selectedIndex==0){
+  alert("You chose the Brick House.  A Brick House is very strong and an attractive choice.  Well done!")
+}
+
+else if(x.selectedIndex==1){
+  alert("You chose the Log House.  A Log House is nice if you want to live in the woods near a lake.  Good choice.")
+}
+
+else if(x.selectedIndex==2){
+  alert("You chose the Cape Cod.  This house is appropriate if you live in New England.  It can be a bit cramped and small on the second floor.")
+}
+
+else if(x.selectedIndex==3){
+  alert("You chose the English Tudor.  This house is a classic and will make you look like you have a lot of money.  Good choice!")
+}
+
+}
+</script>
+</head>
+<body>
+
+<form name="houseform">
+Select your favorite type of house:
+<select id="housetype">
+<option>Brick House</option>
+<option>Log House</option>
+<option>Cape Cod</option>
+<option>English Tudor</option>
+</select>
+<br><br>
+<input type="button" onclick="getIndex()"
+value="Tell me more about my house">
+</form>
+</body>
+</html>
